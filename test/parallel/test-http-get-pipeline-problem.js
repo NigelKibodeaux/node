@@ -33,7 +33,7 @@ http.globalAgent.maxSockets = 1;
 
 common.refreshTmpDir();
 
-const image = fixtures.readSync('/person.jpg');
+const image = fs.readFileSync(fixtures.path('/person.jpg'));
 
 console.log(`image.length = ${image.length}`);
 
